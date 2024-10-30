@@ -46,7 +46,6 @@ const Scene: React.FC = () => {
           <OrbitControls target={[0, 0, 0]} />
           <axesHelper args={[100]} />
           <gridHelper />
-          <Stats />
         </Canvas>
       </Suspense>
 
