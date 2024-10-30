@@ -29,7 +29,12 @@ const Scene: React.FC = () => {
       <Suspense fallback={<Loader />}>
         <Canvas camera={{ position: [6, 4, 2] }}>
           <directionalLight
-            position={[0, 10, 0]}
+            position={[0, 0, 25]}
+            castShadow
+            intensity={Math.PI * 1}
+          />
+          <directionalLight
+            position={[-1, 0.6, 2.8]}
             castShadow
             intensity={Math.PI * 1}
           />
